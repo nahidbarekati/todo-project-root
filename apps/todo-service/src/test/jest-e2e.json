@@ -1,0 +1,20 @@
+{
+    "preset": "@nestjs/testing",
+    "testEnvironment": "node",
+    "testMatch": [
+        "**/?(*.)+(e2e).[tj]s?(x)"
+    ],
+    "moduleFileExtensions": [
+        "js",
+        "json",
+        "ts"
+    ],
+    "transform": {
+        "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "coverageDirectory": "../../coverage/apps/todo-service",
+    "testPathIgnorePatterns": [
+        "<rootDir>/dist/",
+        "<rootDir>/node_modules/"
+    ]
+}

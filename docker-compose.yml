@@ -1,0 +1,11 @@
+version: '3'
+services:
+  rabbitmq:
+    image: rabbitmq:management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"    # Port for RabbitMQ
+      - "15672:15672"  # Port for RabbitMQ management UI
+    environment:
+      RABBITMQ_DEFAULT_USER: admin  # Default username
+      RABBITMQ_DEFAULT_PASS: admin  # Default password

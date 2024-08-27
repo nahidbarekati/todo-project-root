@@ -1,0 +1,26 @@
+{
+  "monorepo": true,
+  "root": "apps",
+  "sourceRoot": "src",
+  "projects": {
+    "user-service": {
+      "type": "application",
+      "root": "apps/user-service",
+      "sourceRoot": "apps/user-service/src",
+      "entryFile": "main",
+      "compilerOptions": {
+        "tsConfigPath": "apps/user-service/tsconfig.app.json"
+      }
+    },
+    "todo-service": {
+      "type": "application",
+      "root": "apps/todo-service",
+      "sourceRoot": "apps/todo-service/src",
+      "entryFile": "main",
+      "compilerOptions": {
+        "tsConfigPath": "apps/todo-service/tsconfig.app.json"
+      }
+    }
+    
+  }
+}
